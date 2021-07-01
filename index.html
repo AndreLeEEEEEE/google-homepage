@@ -2,11 +2,20 @@
 <html>
 <head>
 <style>
-    .FC {
+    .FCr {
         display: flex;
         justify-content: space-between;
         width: 100%;  /*Encompass the entire width of the screen*/
         position: fixed;  /*Make the entire flexbox fixed*/
+        flex-direction: row;
+    }
+
+    .G {
+        display: grid;
+        grid-template-rows: 100px 50px 50px 50px;
+        grid-template-columns: 25px 100px 25px;
+        column-gap: 10px;
+        row-gap: 15px;
     }
 
     ul {
@@ -39,10 +48,11 @@
     .footer {
         bottom: 0;
     }
+
 </style>
 </head>
 <body>
-<div class="FC header">
+<div class="FCr header">
     <ul>
         <li>About</li>
         <li>Store</li>
@@ -54,10 +64,10 @@
         <li><button type="button">Sign in</button></li>
     </ul>
 </div>
-<div>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo in color.">
+<div class="G">
+    <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo in color.">
 </div>
-<div class="FC footer" style="background-color: rgb(242, 242, 242);">
+<div class="FCr footer" style="background-color: rgb(242, 242, 242);">
     <ul>
         <li>Advertising</li>
         <li>Business</li>
