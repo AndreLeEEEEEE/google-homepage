@@ -3,20 +3,52 @@
 <head>
 <style>
     ul {
-        list-style-type: none;
+        list-style-type: none;  /*Remove bullet points*/
+        margin: 0;  /*Remove default margins*/
+        padding: 0;  /*Remove default padding*/
+        position: fixed;
+        width: 100%;
     }
+
+    li {
+        float: left;
+        padding: 14px 10px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .header {
+        top: 0;
+    }
+
+    .footer {
+        bottom: 0;
+    }
+
 </style>
 </head>
 <body>
-<ul>
+<ul class="header">
     <li>About</li>
     <li>Store</li>
-    <li>Gmail</li>
-    <li>Images</li>
-    <li><img src="images/outline_apps_black_24dp.png" alt="Google apps"></li>
-    <li><button type="button">Sign in</button></li>
+    <li style="float: right;"><button type="button">Sign in</button></li>
+    <li style="float: right;"><img src="images/outline_apps_black_24dp.png" alt="Google apps"></li>
+    <li style="float: right;">Images</li>
+    <li style="float: right;">Gmail</li>
 </ul>
-<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo in color.">
-
+<div>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo in color.">
+</div>
+<ul class="footer">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 </body>
 </html>
