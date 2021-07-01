@@ -5,15 +5,15 @@
     .FC {
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        position: fixed;
+        width: 100%;  /*Encompass the entire width of the screen*/
+        position: fixed;  /*Make the entire flexbox fixed*/
     }
 
     ul {
         list-style-type: none;  /*Remove bullet points*/
         margin: 0;  /*Remove default margins*/
         padding: 0;  /*Remove default padding*/
-        display: flex;
+        display: flex;  /*Make list items line up horizontally*/
     }
 
     li {
@@ -22,6 +22,14 @@
         text-align: center;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+        background-color: rgb(26, 115, 232);
+        color: white;
+        border-radius: 5px;  /*Rounds off the corners*/
+        border-style: hidden;
+        padding: 10px 15px;
     }
 
     .header {
@@ -49,7 +57,7 @@
 <div>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo in color.">
 </div>
-<div class="FC footer" style="background-color: gray;">
+<div class="FC footer" style="background-color: rgb(242, 242, 242);">
     <ul>
         <li>Advertising</li>
         <li>Business</li>
