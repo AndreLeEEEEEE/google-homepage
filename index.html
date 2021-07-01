@@ -2,16 +2,21 @@
 <html>
 <head>
 <style>
+    .FC {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+    }
+
     ul {
         list-style-type: none;  /*Remove bullet points*/
         margin: 0;  /*Remove default margins*/
         padding: 0;  /*Remove default padding*/
-        position: fixed;
-        width: 100%;
+        display: flex;
     }
 
     li {
-        float: left;
         padding: 14px 10px;
         display: block;
         text-align: center;
@@ -26,30 +31,39 @@
     .footer {
         bottom: 0;
     }
-
 </style>
 </head>
 <body>
-<ul class="header">
-    <li>About</li>
-    <li>Store</li>
-    <li style="float:right;"><button type="button">Sign in</button></li>
-    <li style="float:right;"><img src="images/outline_apps_black_24dp.png" alt="Google apps"></li>
-    <li style="float:right;">Images</li>
-    <li style="float:right;">Gmail</li>
-</ul>
+<div class="FC header">
+    <ul>
+        <li>About</li>
+        <li>Store</li>
+    </ul>
+    <ul>
+        <li>Gmail</li>
+        <li>Images</li>
+        <li><img src="images/outline_apps_black_24dp.png" alt="Google apps"></li>
+        <li><button type="button">Sign in</button></li>
+    </ul>
+</div>
 <div>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo in color.">
 </div>
-<ul class="footer">
-    <li>Advertising</li>
-    <li>Business</li>
-    <li>How Search works</li>
-    <li style="float:none;"><img src="images/"></li>
-    <li style="float:none;">Carbon neutral since 2007</li>
-    <li style="float:right;">Settings</li>
-    <li style="float:right;">Terms</li>
-    <li style="float:right;">Privacy</li>
-</ul>
+<div class="FC footer" style="background-color: gray;">
+    <ul>
+        <li>Advertising</li>
+        <li>Business</li>
+        <li>How Search works</li>
+    </ul>
+    <ul>
+        <li><img src="images/outline_spa_black_24dp.png" alt="A flower"></li>
+        <li>Carbon neutral since 2007</li>
+    </ul>
+    <ul>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Settings</li>
+    </ul>
+</div>
 </body>
 </html>
