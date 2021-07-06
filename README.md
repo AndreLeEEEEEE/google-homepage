@@ -1,2 +1,3 @@
 Using HTML, I've visually recreated the google homepage.
-There'll be little to no functionality from the actual page.
+There's little to no functionality on this page that's
+similar to the actual page.
