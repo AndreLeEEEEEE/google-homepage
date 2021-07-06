@@ -40,12 +40,18 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    button {
+    .sign-in {
         background-color: rgb(26, 115, 232);
         color: white;
         border-radius: 5px;  /*Rounds off the corners*/
         border-style: hidden;
         padding: 10px 15px;
+    }
+
+    .s-button {
+        border-style: hidden;
+        color: black;
+        background-color: rgb(242, 242, 242);
     }
 
     .header {top: 0;}
@@ -55,11 +61,6 @@
         grid-area: logo;
         justify-self: center;
     }
-
-    .search-bar {
-        grid-area: input;
-    }
-
 </style>
 </head>
 <body>
@@ -72,14 +73,16 @@
         <li>Gmail</li>
         <li>Images</li>
         <li><img src="images/outline_apps_black_24dp.png" alt="Google apps"></li>
-        <li><button type="button">Sign in</button></li>
+        <li><button class="sign-in" type="button">Sign in</button></li>
     </ul>
 </div>
 <div class="G">
     <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo in color.">
     <img style="justify-self:end;" src="images/outline_search_black_24dp.png" alt="Magnifying glass">
-    <input class="search-bar" type="text">
+    <input style="grid-area: input;" type="text">
     <img style="justify-self:start;" src="images/outline_mic_black_24dp.png" alt="Microphone">
+    <button class="s-button" style="grid-area:search; justify-self: end;" type="button">Google Search</button>
+    <button class="s-button" style="grid-area:lucky; justify-self: start;" type="button">I'm Feeling Lucky</button>
 </div>
 <div class="FCr footer" style="background-color: rgb(242, 242, 242);">
     <ul>
